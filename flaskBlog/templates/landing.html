@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>InfoMD</title>
+<style>
+    .button {
+      border-radius: 4px;
+      border: none;
+      background-color: rgba(239, 239, 239, 0.5);
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 5px;
+      width: 18rem;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+    .button a {
+      cursor: pointer;
+      display: inline-block;
+      color: #FFFFFF;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button a:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover a {
+      padding-right: 25px;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    .button:hover a:after {
+      opacity: 1;
+      right: 0;
+    }
+
+  .animate-reveal {
+    letter-spacing: 2px;
+    opacity: 0;
+    -webkit-animation: reveal 0.8s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+       -moz-animation: reveal 0.8s ease-in 1 normal forwards;
+         -o-animation: reveal 0.8s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+            animation: reveal 0.8s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+  }
+
+  .animate {
+    -webkit-animation-delay: 0.8s;
+       -moz-animation-delay: 0.8s;
+         -o-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+  }
+
+  @keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+</style>
+
+  </head>
+  <body background="../static/bg-star-image.jpg" style="background-size: cover;height:100vh">
+    <div class="row" style="height:35vh">
+      <div class="col-12">
+        &nbsp;
+      </div>
+    </div>
+
+    <div class="row" style="height:40vh;">
+      <div class="col-12">
+        <p class=" display-4 font-weight-heavy text-center text-white">
+          <a>Welcome MDHS Informatics Club BLOG</a><br>
+          <button class="btn btn-outline-primary button mx-auto animate-reveal animate"><a href="{{url_for('login')}}">Start learning </a></button>
+        </p>
+      </div>
+    </div>
+    <div class="row" style="height:25vh">
+      <div class="col-12">
+        &nbsp;
+      </div>
+    </div>
+
+  </body>
+</html>
