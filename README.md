@@ -1,5 +1,5 @@
 # InfoMD_Blog
-A Blog (dynamic website) for Informatics Online Courses Hosting
+A Blog (dynamic website) for Informatics Online Courses Hosting (Demo)
 https://youtu.be/TuJmGMhyd3U
 > **Flow Chart**
 ![Flow-Chart](https://raw.githubusercontent.com/Curiouskid0423/InfoMD_Blog/master/BLOGFLOW-01.png)
